@@ -1,0 +1,29 @@
+.navigation {
+  padding: 24px 0;
+  display: flex;
+  justify-content: center;
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    .page-numbers {
+      margin: 0 12px;
+      display: grid;
+      place-content: center;
+      height: 26px;
+      aspect-ratio: 1;
+      border-radius: 5px;
+      background-color: rgba($color-white, 0.85);
+      color: $color-primary-dark;
+      font-size: 16px;
+      font-weight: 500;
+      &.current {
+        color: rgba($color-white, 0.85);
+        background-color: $color-third;
+      }
+      &.prev,
+      &.next {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+.icon-box-side {
+  ul {
+    li {
+      a {
+        color: $color-primary-dark;
+        font-size: 14px;
+        width: 30px;
+        aspect-ratio: 1;
+        background-color: $color-white;
+        border-radius: 50%;
+        display: grid;
+        place-content: center;
+        @include hover(0.4) {
+          background-color: $color-primary-light;
+          color: $color-white;
+        }
+      }
+    }
+  }
+}

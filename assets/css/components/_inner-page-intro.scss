@@ -1,0 +1,19 @@
+.inner-page-intro {
+  margin: 40px 0;
+  padding: 64px 0;
+  border: {
+    top: 1px solid rgba($color-white, 0.1);
+    bottom: 1px solid rgba($color-white, 0.1);
+  }
+  position: relative;
+  background-image: url("../img/introback.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: rgba($color-white, 1);
+  }
+}

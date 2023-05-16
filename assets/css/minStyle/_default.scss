@@ -1,0 +1,32 @@
+p,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: unset;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: $color-primary-dark;
+  font-family: $font-regular;
+  // @include dir(rtl) {
+  // }
+  // @include dir(ltr) {
+  // }
+}

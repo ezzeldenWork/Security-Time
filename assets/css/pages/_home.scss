@@ -1,0 +1,185 @@
+.intro-section {
+  .intro-content {
+    .sub-title {
+      font-size: 16px;
+      color: rgba($color-gray, 0.8);
+    }
+    .title {
+      color: $color-white;
+      font-size: 40px;
+      padding: 24px 0;
+      width: 90%;
+      font-family: $font-bold;
+      span {
+        color: $color-secondary;
+      }
+    }
+    .prag {
+      color: rgba($color-gray, 0.8);
+    }
+  }
+  .intro-img {
+    text-align: end;
+  }
+}
+
+.services-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/services-section.png");
+}
+
+.portfolio-section {
+  .portfolio-slider {
+    .slick-slide {
+      text-align: center;
+    }
+    .portfolio-slider-item {
+      width: calc(100% - 20px) !important;
+      height: calc(100% - 40px) !important;
+      margin: 0 0 20px;
+      .portfolio-item {
+        img {
+          height: 420px;
+          object-fit: cover;
+          border-radius: 4px;
+        }
+      }
+    }
+  }
+}
+
+.portfolio-item {
+  img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+}
+
+.client-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/clintPattern.png");
+  .client-slider {
+    .client-slider-item {
+      width: calc(100% - 30px) !important;
+      margin: 0 auto;
+      .client-slider-item-box {
+        padding: 20px 80px;
+        border-radius: 5px;
+        background-color: rgba($color-white, 1);
+        @include after("") {
+          right: 40px;
+          top: 50%;
+          height: 50%;
+          width: 4px;
+          border-radius: 14px;
+          background: linear-gradient(
+            135deg,
+            $color-primary-light 0%,
+            $color-secondary 100%
+          );
+          transform: translateY(-50%);
+        }
+        .img-box {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            height: 50px;
+            aspect-ratio: 1;
+            object-fit: cover;
+            margin: 0 14px;
+            border-radius: 50%;
+          }
+          .name {
+            font-size: 20px;
+            font-weight: 500;
+            color: rgba($color-black, 1);
+          }
+        }
+        .prag {
+          padding: 14px 0 0;
+          text-align: center;
+          font-size: 16px;
+          line-height: 1.8;
+        }
+      }
+    }
+  }
+}
+
+.pattern-section {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../img/section-padding.png");
+}
+
+.logo-section {
+  .logo-slider {
+    .logo-slider-item {
+      width: calc(100% - 20px) !important;
+      text-align: center;
+      img {
+        height: 40px;
+        margin: 0 auto;
+        object-fit: contain;
+      }
+    }
+  }
+}
+@include media(772) {
+  .intro-section {
+    .intro-content {
+      text-align: center;
+      .title {
+        margin: 0 auto;
+      }
+    }
+    .intro-img {
+      display: none;
+    }
+  }
+
+  .portfolio-section {
+    .portfolio-slider {
+      .portfolio-slider-item {
+        width: calc(100% - 140px) !important;
+      }
+    }
+  }
+
+  .client-section {
+    .client-slider {
+      .client-slider-item {
+        .client-slider-item-box {
+          padding: 20px 20px 40px;
+          &:after {
+            right: 50%;
+            transform: translateX(50%);
+            bottom: 20px;
+            top: unset;
+            width: 50%;
+            height: 2px;
+          }
+          .prag {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  .logo-section {
+    .logo-slider {
+      .logo-slider-item {
+        img {
+          height: 30px;
+        }
+      }
+    }
+  }
+}

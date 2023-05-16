@@ -1,0 +1,20 @@
+.services-box {
+  background-color: $color-white;
+  text-align: center;
+  padding: 28px;
+  @extend .after-box;
+  .services-icon {
+    img {
+      height: 60px;
+    }
+  }
+  .title {
+    padding: 24px 0;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .prag {
+    font-size: 14px;
+    padding-bottom: 24px;
+  }
+}

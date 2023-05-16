@@ -1,0 +1,21 @@
+.title-box {
+  padding-bottom: 30px;
+  text-align: center;
+  .title {
+    padding: 0 40px 0 0;
+    font-size: 26px;
+    color: $color-white;
+    display: inline-block;
+    z-index: 1;
+    @include after("") {
+      right: 0px;
+      z-index: -1;
+      bottom: 0px;
+      height: 30px;
+      aspect-ratio: 1;
+      background-image: url("../img/logo.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
