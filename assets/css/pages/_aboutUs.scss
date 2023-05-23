@@ -1,0 +1,101 @@
+.about-intro-section {
+  .intro-title {
+    font-size: 30px;
+    font-weight: 600;
+    color: $color-white;
+    padding-bottom: 12px;
+    span {
+      background: linear-gradient(89.87deg, #3b8ae5 24.02%, #4276c4 104.94%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .parg {
+    color: rgba($color-white, 0.7);
+    font-size: 16px;
+    width: 70%;
+  }
+  .mission-section {
+    padding: 24px;
+    margin: 24px 0 0;
+    background: linear-gradient(180deg, #1a3a6b 0%, rgba(26, 58, 107, 0) 100%);
+    border: 1px solid rgba(220, 220, 220, 0.53);
+    border-radius: 8px;
+    .mission-icon-box {
+      display: flex;
+      align-items: center;
+      padding: 0 0 12px;
+      img {
+        height: 50px;
+      }
+      .title {
+        font-size: 24px;
+        font-weight: 900;
+        background: linear-gradient(89.87deg, #3b8ae5 24.02%, #4276c4 104.94%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .parg {
+      color: rgba($color-white, 0.7);
+      font-size: 13px;
+      width: 100%;
+    }
+  }
+  .intro-img {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.timeline-section {
+  background-color: $color-third;
+  padding: 30px 0;
+  .timeline-box {
+    text-align: center;
+    margin-bottom: 12px;
+    .number-item {
+      font-size: 26px;
+      font-weight: 600;
+      color: rgba($color-white, 1);
+    }
+    .name-item {
+      padding-top: 12px;
+      font-size: 13px;
+      font-weight: 500;
+      color: rgba($color-white, 1);
+    }
+  }
+}
+
+.about-logo-section {
+  .parg {
+    color: rgba($color-white, 0.7);
+  }
+}
+.about-logo-section {
+  margin: 40px 0 0;
+}
+
+@include media(772) {
+  .about-intro-section {
+    .intro-img {
+      img {
+        height: 400px;
+        object-fit: cover;
+      }
+    }
+  }
+  .about-logo-section {
+    text-align: center;
+    .logo-content {
+      padding-top: 24px;
+      .title-box {
+        text-align: center !important;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.services-section {
+  .what-we-offer-list-box {
+    position: relative;
+    margin-top: 60px;
+    padding: 24px {
+      top: 60px;
+    }
+    border: 1px solid rgba($color-gray, 0.4);
+    text-align: center;
+    .icon {
+      display: grid;
+      place-content: center;
+      width: 116px;
+      aspect-ratio: 1;
+      background-repeat: no-repeat;
+      background-size: contain;
+      position: absolute;
+      top: calc(116px / -2);
+      left: 50%;
+      transform: translateX(-50%);
+      background-image: url("../img/icon-back.png");
+    }
+    .title {
+      font-size: 22px;
+      font-weight: 600;
+      padding-bottom: 12px;
+      color: rgba($color-white, 1);
+    }
+  }
+}

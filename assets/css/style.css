@@ -54,7 +54,7 @@ body {
 
 .parg {
   font-size: 13px;
-  color: #eeeeee;
+  color: rgba(238, 238, 238, 0.9);
 }
 
 .section-padding {
@@ -193,6 +193,7 @@ body {
 }
 .footer-section {
   padding: 60px 0 0;
+  margin: 60px 0 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
   background-image: url("../img/footerback.png");
@@ -440,6 +441,127 @@ html[dir=rtl] .footer-section .footer-list ul li:after {
     height: 30px;
   }
 }
+.about-intro-section .intro-title {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+  padding-bottom: 12px;
+}
+.about-intro-section .intro-title span {
+  background: linear-gradient(89.87deg, #3b8ae5 24.02%, #4276c4 104.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-intro-section .parg {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  width: 70%;
+}
+.about-intro-section .mission-section {
+  padding: 24px;
+  margin: 24px 0 0;
+  background: linear-gradient(180deg, #1a3a6b 0%, rgba(26, 58, 107, 0) 100%);
+  border: 1px solid rgba(220, 220, 220, 0.53);
+  border-radius: 8px;
+}
+.about-intro-section .mission-section .mission-icon-box {
+  display: flex;
+  align-items: center;
+  padding: 0 0 12px;
+}
+.about-intro-section .mission-section .mission-icon-box img {
+  height: 50px;
+}
+.about-intro-section .mission-section .mission-icon-box .title {
+  font-size: 24px;
+  font-weight: 900;
+  background: linear-gradient(89.87deg, #3b8ae5 24.02%, #4276c4 104.94%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.about-intro-section .mission-section .parg {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 13px;
+  width: 100%;
+}
+.about-intro-section .intro-img img {
+  width: 100%;
+}
+
+.timeline-section {
+  background-color: #375076;
+  padding: 30px 0;
+}
+.timeline-section .timeline-box {
+  text-align: center;
+  margin-bottom: 12px;
+}
+.timeline-section .timeline-box .number-item {
+  font-size: 26px;
+  font-weight: 600;
+  color: white;
+}
+.timeline-section .timeline-box .name-item {
+  padding-top: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: white;
+}
+
+.about-logo-section .parg {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.about-logo-section {
+  margin: 40px 0 0;
+}
+
+@media (max-width: 772px) {
+  .about-intro-section .intro-img img {
+    height: 400px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .about-logo-section {
+    text-align: center;
+  }
+  .about-logo-section .logo-content {
+    padding-top: 24px;
+  }
+  .about-logo-section .logo-content .title-box {
+    text-align: center !important;
+  }
+}
+.services-section .what-we-offer-list-box {
+  position: relative;
+  margin-top: 60px;
+  padding: 24px;
+  padding-top: 60px;
+  border: 1px solid rgba(238, 238, 238, 0.4);
+  text-align: center;
+}
+.services-section .what-we-offer-list-box .icon {
+  display: grid;
+  place-content: center;
+  width: 116px;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -58px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url("../img/icon-back.png");
+}
+.services-section .what-we-offer-list-box .title {
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 12px;
+  color: white;
+}
+
 .after-box, .services-box {
   border-radius: 4px;
   transform: translate(-10px, 10px);
@@ -588,6 +710,12 @@ html[dir=rtl] .footer-section .footer-list ul li:after {
 .title-box {
   padding-bottom: 30px;
   text-align: center;
+}
+.title-box.no-after .title {
+  padding: 0;
+}
+.title-box.no-after .title:after {
+  display: none;
 }
 .title-box .title {
   padding: 0 40px 0 0;
